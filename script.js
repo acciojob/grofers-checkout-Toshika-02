@@ -11,9 +11,11 @@ const getSum = () => {
     });
 
     const table = document.querySelector('table');
-    const newRow = table.insertRow(-1);
-    const cell = newRow.insertCell(0);
-    cell.textContent = `Total Price: ${totalPrice}`;
+    const newRow = table.insertRow();
+    const cell1 = newRow.insertCell();
+    const cell2 = newRow.insertCell();
+    cell1.textContent = 'Total Price:';
+    cell2.textContent = totalPrice;
   
 };
 
